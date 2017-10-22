@@ -1,0 +1,63 @@
+Repro_pitch
+========================================================
+author: Theo Livingwell
+date: 21 Oct 2017
+autosize: true
+
+Reproducible Pitch Presentation
+Select a comfortable experience for your journey with one of Nissan pool cars.
+
+========================================================
+
+Nissan pool cars are a range of different makes and models of cars. 
+A shiny application is created to help Nissan employees select a comfortable 
+experience for their journeys when using pool cars. A comfortable experience means 
+good performance on fuel usage within budget, speed and ease of tiredness 
+depending on the type of transmission (Automatic or Manual) preferred.
+
+NissanPoolCars shiny app can be found at https://alchgabriel3.shinyapps.io/NissanPoolCars/
+The associated ui.R and server.R codes are on https://github.com/theo-livingwell1/NissanPoolCars.git
+
+
+
+========================================================
+
+How the app works
+
+The app allows you, the user to inputs basic information about your journey. The app displays 
+cars that are relevant to the user input allowing for peace of mind, relaxation and comfort 
+during your journey.
+
+The user provides two sets of information on the side panel: 
+
+a. information about journey 
+1.	estimated distance
+2.	Price of gasoline at the time of journey
+3.	How much they are willing to spending on gasoline on entire journey
+
+b. set parameters about pool car
+
+The main panel displays relevant matches for a comfortable journey 
+
+========================================================
+
+Data
+Data used for this assignment comes from mtcars data set built in to R. This data was chosen as Nissan pool cars are a collection of same makes and models. 
+
+Some exploratory view of the data
+
+```{r}
+
+head(mtcars, 7)
+
+```
+
+==========================================================================
+
+Here is a plot comparing automatic and manual cars on mile per gallon, mpg
+
+```{r}
+boxplot(mpg~am, data=mtcars, xlab="Form of transmission", ylab="miles per gallon, mpg", main="How is the form of transmission related to the miles per gallon, mpg")
+```
+
+ 
